@@ -3,581 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Galaxy Typist 1996 - 銀河打字戰機 1996</title>
+  <title>銀河打字戰機 1996 - Galaxy Typist 1996</title>
 
-  <!-- PWA & Mobile Web App Standalone Meta Tags -->
+  <!-- Open Graph 社群分享卡片 (內嵌高畫質 SVG 預覽圖 Data URI) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="銀河打字戰機 1996 - Galaxy Typist">
+  <meta property="og:description" content="1996 年復古街機風格打字射擊遊戲！支援英打、中打、初階注音與外籍羅馬拼音對應模式。">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23050b14'/%3E%3Cpath d='M0 0h1200v630H0z' fill='none' stroke='%2300f3ff' stroke-width='16'/%3E%3Ctext x='50%25' y='40%25' text-anchor='middle' fill='%23ffe600' font-family='monospace' font-weight='900' font-size='82' letter-spacing='8'%3EGALAXY TYPIST 1996%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%2300f3ff' font-family='sans-serif' font-weight='bold' font-size='44' letter-spacing='4'%3E銀河打字戰機%3C/text%3E%3Cpolygon points='600,400 560,490 600,470 640,490' fill='%2300f3ff' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E">
+
+  <!-- PWA & 桌面 App 圖示 (內嵌向量戰機圖標) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070d19'/%3E%3Cpolygon points='32,8 14,52 32,44 50,52' fill='%2300f3ff' stroke='%23ffe600' stroke-width='2'/%3E%3Ccircle cx='32' cy='30' r='5' fill='%23ff0055'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%23070d19'/%3E%3Cpolygon points='90,20 40,150 90,126 140,150' fill='%2300f3ff' stroke='%23ffe600' stroke-width='6'/%3E%3Ccircle cx='90' cy='85' r='14' fill='%23ff0055'/%3E%3C/svg%3E">
+
+  <!-- Web App 全螢幕模式設定 -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="銀河打字1996">
-  <meta name="application-name" content="銀河打字戰機 1996">
+  <meta name="apple-mobile-web-app-title" content="銀河打字">
   <meta name="theme-color" content="#030712">
 
-  <!-- Open Graph & Social Sharing Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Galaxy Typist 1996 - 銀河打字戰機 1996">
-  <meta property="og:description" content="1996 年經典街機風打字射擊遊戲！英打、中打詞彙、注音及外籍拼音多模式作戰系統。">
-  <meta property="og:image" content="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630' width='1200' height='630'><rect width='1200' height='630' fill='%23050512'/><circle cx='200' cy='120' r='2' fill='%2300f0ff'/><circle cx='850' cy='90' r='3' fill='%23ffe600'/><circle cx='1050' cy='420' r='2.5' fill='%23ff007f'/><circle cx='340' cy='510' r='1.5' fill='%23ffffff'/><polygon points='600,160 520,380 580,340 600,410 620,340 680,380' fill='%2300f0ff' stroke='%23ffffff' stroke-width='6'/><polygon points='580,410 600,470 620,410' fill='%23ff007f'/><text x='600' y='520' text-anchor='middle' font-family='monospace' font-weight='900' font-size='56' fill='%2300f0ff'>GALAXY TYPIST 1996</text><text x='600' y='575' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='28' fill='%23ffe600'>銀河打字戰機 - 星空多模式作戰系統</text></svg>">
-
-  <!-- Embedded SVG App Icon (No external files needed) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23030712'/><rect x='3' y='3' width='94' height='94' rx='19' fill='none' stroke='%2300f0ff' stroke-width='4'/><polygon points='50,18 30,68 45,60 50,72 55,60 70,68' fill='%2300f0ff' stroke='%23ffffff' stroke-width='2'/><polygon points='46,72 50,86 54,72' fill='%23ff007f'/><circle cx='25' cy='28' r='2' fill='%23ffe600'/><circle cx='76' cy='32' r='2.5' fill='%2300f0ff'/></svg>">
-  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%23030712'/><rect x='6' y='6' width='168' height='168' rx='34' fill='none' stroke='%2300f0ff' stroke-width='6'/><polygon points='90,32 54,122 81,108 90,130 99,108 126,122' fill='%2300f0ff' stroke='%23ffffff' stroke-width='3'/><polygon points='82,130 90,154 98,130' fill='%23ff007f'/><circle cx='45' cy='50' r='3.5' fill='%23ffe600'/><circle cx='135' cy='58' r='4' fill='%2300f0ff'/></svg>">
-
-  <!-- Embedded Inline Web App Manifest Data URI -->
-  <link rel="manifest" href="data:application/manifest+json;utf-8,%7B%22name%22%3A%22%E9%8A%80%E6%B2%B3%E6%89%93%E5%AD%97%E6%88%B0%E6%A9%9F%201996%22%2C%22short_name%22%3A%22%E9%8A%80%E6%B2%B3%E6%89%93%E5%AD%97%22%2C%22description%22%3A%221996%20%E5%B9%B4%E5%BE%A9%E5%8F%A4%E8%A1%97%E6%A9%9F%E9%A2%A8%E6%8A%95%E5%B9%A3%E6%89%93%E5%AD%97%E5%B0%84%E6%93%8A%E9%81%8A%E6%88%B2%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22any%22%2C%22background_color%22%3A%22%23030712%22%2C%22theme_color%22%3A%22%23030712%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Crect%20width%3D'100'%20height%3D'100'%20rx%3D'22'%20fill%3D'%23030712'%2F%3E%3Cpolygon%20points%3D'50%2C18%2030%2C68%2045%2C60%2050%2C72%2055%2C60%2070%2C68'%20fill%3D'%2300f0ff'%2F%3E%3Cpolygon%20points%3D'46%2C72%2050%2C86%2054%2C72'%20fill%3D'%23ff007f'%2F%3E%3C%2Fsvg%3E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
-
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: VT323 & Press Start 2P & Chakra Petch for 1996 Arcade Experience -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --crt-glow: rgba(0, 243, 255, 0.25);
+    }
     * {
       box-sizing: border-box;
       user-select: none;
-      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
-
-    body {
+    body, html {
       margin: 0;
       padding: 0;
-      background-color: #030308;
-      color: #e0f2fe;
-      font-family: 'Chakra Petch', sans-serif;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
       overflow: hidden;
-      height: 100vh;
-      width: 100vw;
+      background-color: #030712;
+      font-family: 'Share Tech Mono', 'Noto Sans TC', monospace;
     }
-
-    .pixel-title {
-      font-family: 'Press Start 2P', monospace;
-      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 2px 2px 0px #ff0055;
-    }
-
-    .pixel-font {
+    .font-pixel {
       font-family: 'Press Start 2P', monospace;
     }
-
-    .arcade-font {
-      font-family: 'VT323', monospace;
-    }
-
-    /* 1996 CRT Scanline & Curved Raster Emulation */
-    .crt-screen::before {
+    .crt::after {
       content: " ";
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.45) 50%), 
-                  linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 255, 0, 0.03));
-      z-index: 25;
-      background-size: 100% 3px, 6px 100%;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%),
+                  linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.04));
+      z-index: 50;
+      background-size: 100% 3px, 4px 100%;
       pointer-events: none;
+      opacity: 0.8;
     }
-
-    .crt-vignette {
-      box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.9), inset 0 0 25px rgba(0, 240, 255, 0.25);
+    .arcade-border {
+      border: 2px solid #00f3ff;
+      box-shadow: 0 0 12px rgba(0, 243, 255, 0.4), inset 0 0 10px rgba(0, 243, 255, 0.2);
     }
-
-    /* Tactile Arcade Buttons */
-    .arcade-btn {
-      position: relative;
-      transition: all 0.12s ease;
-      cursor: pointer;
+    .neon-text-cyan {
+      text-shadow: 0 0 8px rgba(0, 243, 255, 0.8), 0 0 18px rgba(0, 243, 255, 0.4);
     }
-    .arcade-btn:active {
-      transform: translateY(2px) scale(0.97);
+    .neon-text-yellow {
+      text-shadow: 0 0 8px rgba(255, 230, 0, 0.8), 0 0 18px rgba(255, 230, 0, 0.4);
     }
-
-    /* Custom Scrollbar for Settings & Menus */
-    ::-webkit-scrollbar {
-      width: 6px;
+    .neon-text-pink {
+      text-shadow: 0 0 8px rgba(255, 0, 85, 0.8), 0 0 18px rgba(255, 0, 85, 0.4);
     }
-    ::-webkit-scrollbar-track {
-      background: #090a16;
+    .choice-btn {
+      background: linear-gradient(180deg, #111e38 0%, #080f1d 100%);
+      border: 2px solid #00f3ff;
+      box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+      transition: all 0.08s ease-in-out;
     }
-    ::-webkit-scrollbar-thumb {
-      background: #00f0ff;
-      border-radius: 3px;
+    .choice-btn:active {
+      transform: scale(0.94);
+      background: #00f3ff;
+      color: #030712;
+      box-shadow: 0 0 20px #00f3ff;
     }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center relative select-none">
+<body class="flex items-center justify-center bg-black">
 
-  <!-- Main Arcade Cabinet Housing -->
-  <div id="arcadeWrapper" class="relative w-full h-full max-w-6xl max-h-[940px] bg-slate-950 border-2 sm:border-4 border-cyan-500 rounded-none sm:rounded-2xl overflow-hidden flex flex-col crt-vignette shadow-[0_0_55px_rgba(0,240,255,0.25)]">
-    
-    <!-- CRT Raster Layer -->
-    <div id="crtLayer" class="crt-screen absolute inset-0 pointer-events-none z-30"></div>
+  <!-- 街機框體容器 (使用 100dvh 解決手機上下擠壓) -->
+  <div id="arcadeCabinet" class="relative w-full h-[100dvh] max-w-lg md:max-w-2xl bg-gray-950 flex flex-col crt overflow-hidden md:border-2 md:border-cyan-500/50 md:shadow-[0_0_40px_rgba(0,243,255,0.25)]">
 
-    <!-- Arcade Top Neon HUD Header -->
-    <header class="w-full bg-slate-950/85 border-b-2 border-cyan-500/50 px-3 sm:px-4 py-2 z-20 flex items-center justify-between backdrop-blur">
-      <!-- Game ID & Wave -->
-      <div class="flex items-center space-x-2 sm:space-x-3">
-        <span class="pixel-font text-xs sm:text-sm text-cyan-400 tracking-wider">GT-1996</span>
-        <span id="hudWave" class="pixel-font text-[10px] sm:text-xs text-yellow-400 bg-yellow-950/40 border border-yellow-500/50 px-2 py-0.5 rounded">WAVE: 1</span>
-        <span id="hudModeBadge" class="hidden md:inline-block pixel-font text-[9px] text-pink-400 bg-pink-950/40 border border-pink-500/50 px-2 py-0.5 rounded">MODE</span>
-      </div>
-
-      <!-- Live Arcade Score & Combo Counter -->
-      <div class="flex items-center space-x-4 sm:space-x-8">
-        <div class="flex flex-col items-center">
-          <span class="text-[9px] pixel-font text-slate-400">SCORE</span>
-          <span id="hudScore" class="arcade-font text-2xl sm:text-3xl font-bold text-cyan-300 leading-none">000000</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <span class="text-[9px] pixel-font text-slate-400">COMBO</span>
-          <span id="hudCombo" class="arcade-font text-2xl sm:text-3xl font-bold text-pink-400 leading-none">x0</span>
+    <!-- 頂部 HUD (手機 RWD 緊湊佈局) -->
+    <header id="gameHUD" class="relative z-30 w-full bg-slate-950/95 border-b border-cyan-500/40 px-2 py-1.5 flex items-center justify-between text-xs font-pixel select-none">
+      <div class="flex items-center gap-1.5 sm:gap-3">
+        <span class="text-cyan-400 font-bold hidden sm:inline tracking-tighter">GT-1996</span>
+        <div class="bg-yellow-950/40 border border-yellow-500/40 px-1.5 py-0.5 rounded text-yellow-400 text-[10px] sm:text-xs">
+          W:<span id="hudWave">1</span>
         </div>
       </div>
 
-      <!-- Defense Shield / Mistakes & Settings Button -->
-      <div class="flex items-center space-x-2">
-        <div class="flex flex-col items-end">
-          <span class="text-[9px] pixel-font text-slate-400">SHIELD / MISS</span>
-          <span id="hudShield" class="pixel-font text-[10px] sm:text-xs text-red-400 font-bold">0 / 5</span>
+      <div class="flex items-center gap-2 sm:gap-4 text-center">
+        <div>
+          <div class="text-[9px] text-gray-400">SCORE</div>
+          <div id="hudScore" class="text-cyan-300 font-bold tracking-wider text-xs sm:text-sm">000000</div>
         </div>
-        <button id="openSettingsBtn" class="arcade-btn p-1.5 rounded-lg border border-cyan-500/40 bg-cyan-950/50 hover:bg-cyan-800 text-cyan-300 text-xs ml-1" title="遊戲設定">
-          ⚙️
-        </button>
+        <div>
+          <div class="text-[9px] text-gray-400">COMBO</div>
+          <div id="hudCombo" class="text-pink-400 font-bold text-xs sm:text-sm">x0</div>
+        </div>
+        <div>
+          <div class="text-[9px] text-gray-400">SHIELD</div>
+          <div id="hudShield" class="text-emerald-400 font-bold text-xs sm:text-sm">0/5</div>
+        </div>
       </div>
+
+      <button id="btnOpenSettings" class="text-gray-400 hover:text-cyan-300 p-1 rounded active:scale-95 transition-transform" title="設定">
+        ⚙️
+      </button>
     </header>
 
-    <!-- Canvas Play Area -->
+    <!-- 主遊戲畫布 Canvas -->
     <div class="relative flex-1 w-full h-full overflow-hidden">
-      <canvas id="gameCanvas" class="w-full h-full block bg-[#030308]"></canvas>
+      <canvas id="gameCanvas" class="w-full h-full block"></canvas>
 
-      <!-- Danger Defense Line Marker -->
-      <div id="dangerLineVisual" class="absolute left-0 right-0 pointer-events-none z-10 border-b-2 border-dashed border-red-500/40" style="bottom: 125px;">
-        <span class="absolute right-2 -top-4 text-[9px] pixel-font text-red-500/70 tracking-widest">DEFENSE PERIMETER 1996</span>
-      </div>
+      <!-- 底部防禦判定紅線 -->
+      <div id="dangerLine" class="absolute bottom-4 left-0 w-full h-[2px] bg-red-600/70 shadow-[0_0_8px_#ff0033] pointer-events-none hidden"></div>
 
-      <!-- ================= OVERLAY 1: TITLE & 5 GAME MODES ================= -->
-      <div id="titleScreen" class="absolute inset-0 bg-slate-950/92 flex flex-col items-center justify-center p-3 sm:p-4 z-40 overflow-y-auto">
-        <div class="text-center mb-4 mt-2">
-          <p class="pixel-font text-[9px] sm:text-[11px] text-pink-400 tracking-[0.3em] mb-1 animate-pulse">★ TAITO / CAPCOM 16-BIT RETRO SHOOTER ★</p>
-          <h1 class="pixel-title text-2xl sm:text-3xl md:text-5xl text-cyan-300 mb-1 leading-snug">GALAXY TYPIST<br><span class="text-yellow-400">1996</span></h1>
-          <p class="text-xs sm:text-sm text-cyan-400/80 tracking-wider">銀河打字戰機 - 星空多模式作戰系統</p>
-        </div>
+      <!-- 畫面被擊中紅光警告 -->
+      <div id="damageFlash" class="absolute inset-0 bg-red-600/30 pointer-events-none opacity-0 transition-opacity duration-100 z-20"></div>
 
-        <!-- 5 Modes Select Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5 w-full max-w-5xl mb-4">
-          <!-- Mode 1: English Typing -->
-          <button id="startEnBtn" class="arcade-btn bg-slate-900/90 hover:bg-cyan-950/80 border-2 border-cyan-400 p-3 rounded-xl flex flex-col items-center text-center group transition shadow-lg">
-            <span class="text-2xl mb-1 group-hover:scale-110 transition">🚀</span>
-            <span class="pixel-font text-xs text-cyan-300 font-bold mb-1">英文打字</span>
-            <span class="text-[10px] text-slate-300 leading-tight">英文字母輸入<br>鍵盤即時鎖定射擊</span>
-          </button>
-
-          <!-- Mode 2: Chinese Vocabulary -->
-          <button id="startZhBtn" class="arcade-btn bg-slate-900/90 hover:bg-pink-950/80 border-2 border-pink-400 p-3 rounded-xl flex flex-col items-center text-center group transition shadow-lg">
-            <span class="text-2xl mb-1 group-hover:scale-110 transition">🛸</span>
-            <span class="pixel-font text-xs text-pink-300 font-bold mb-1">中文詞彙</span>
-            <span class="text-[10px] text-slate-300 leading-tight">中文輸入法組字<br>按 Enter 發射電漿束</span>
-          </button>
-
-          <!-- Mode 3: Beginner Zhuyin (Options) -->
-          <button id="startBopomofoBtn" class="arcade-btn bg-slate-900/90 hover:bg-yellow-950/80 border-2 border-yellow-400 p-3 rounded-xl flex flex-col items-center text-center group transition shadow-lg">
-            <span class="text-2xl mb-1 group-hover:scale-110 transition">🎯</span>
-            <span class="pixel-font text-xs text-yellow-300 font-bold mb-1">初階注音</span>
-            <span class="text-[10px] text-slate-300 leading-tight">上顯注音符號<br>下選注音按鈕擊破</span>
-          </button>
-
-          <!-- Mode 4: Pinyin -> Zhuyin (For Foreigners) -->
-          <button id="startPinyinToZhBtn" class="arcade-btn bg-slate-900/90 hover:bg-emerald-950/80 border-2 border-emerald-400 p-3 rounded-xl flex flex-col items-center text-center group transition shadow-lg">
-            <span class="text-2xl mb-1 group-hover:scale-110 transition">🌐</span>
-            <span class="pixel-font text-xs text-emerald-300 font-bold mb-1">拼音對注音</span>
-            <span class="text-[10px] text-slate-300 leading-tight">上顯羅馬拼音 (b/p)<br>下選對應注音 (ㄅ/ㄆ)</span>
-          </button>
-
-          <!-- Mode 5: Zhuyin -> Pinyin (Reverse Mode for Foreigners) -->
-          <button id="startZhToPinyinBtn" class="arcade-btn bg-slate-900/90 hover:bg-violet-950/80 border-2 border-violet-400 p-3 rounded-xl flex flex-col items-center text-center group transition shadow-lg">
-            <span class="text-2xl mb-1 group-hover:scale-110 transition">🔄</span>
-            <span class="pixel-font text-xs text-violet-300 font-bold mb-1">注音對拼音</span>
-            <span class="text-[10px] text-slate-300 leading-tight">上顯注音符號 (ㄅ/ㄆ)<br>下選羅馬拼音 (b/p)</span>
-          </button>
-        </div>
-
-        <div class="flex items-center space-x-3">
-          <button id="titleConfigBtn" class="arcade-btn px-4 py-2 border border-slate-600 hover:border-cyan-400 rounded-lg text-xs text-slate-300 flex items-center gap-1.5 bg-slate-900/90">
-            <span>⚙️ 作戰參數自訂 (難度 / 速度 / 錯誤上限 / 3或5選項)</span>
-          </button>
-          <button id="openInstallModalBtn" class="arcade-btn px-4 py-2 border border-yellow-500/60 hover:border-yellow-400 rounded-lg text-xs text-yellow-300 flex items-center gap-1.5 bg-yellow-950/40">
-            <span>📱 加到手機主畫面 (安裝 App)</span>
-          </button>
+      <!-- 英文/中文打字鍵盤輸入艙 (模式 1 & 2) -->
+      <div id="typingDock" class="absolute bottom-2 inset-x-3 z-30 hidden flex flex-col items-center gap-1">
+        <div class="w-full max-w-md bg-slate-950/90 border border-cyan-500/60 rounded-lg p-2 backdrop-blur shadow-lg flex items-center gap-2">
+          <span class="text-yellow-400 font-pixel text-xs">TARGET:</span>
+          <span id="targetWordDisplay" class="text-cyan-300 font-bold tracking-widest text-base">--</span>
+          <input id="gameInput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                 class="flex-1 bg-black/80 border border-cyan-400/50 rounded px-2 py-1 text-white text-sm focus:outline-none focus:border-cyan-300 font-mono"
+                 placeholder="敲擊鍵盤輸入...">
+          <button id="btnManualShoot" class="px-2.5 py-1 bg-cyan-500 text-black font-bold text-xs rounded hover:bg-cyan-400 active:scale-95">發射</button>
         </div>
       </div>
 
-      <!-- ================= OVERLAY 2: TEXT INPUT DOCK (English & Chinese) ================= -->
-      <div id="textInputDock" class="hidden absolute bottom-4 left-0 right-0 flex flex-col items-center px-4 z-30 pointer-events-auto">
-        <div id="targetIndicator" class="text-xs bg-slate-900/95 border border-cyan-400 px-4 py-1 rounded text-cyan-200 mb-1.5 flex items-center space-x-2 shadow-lg backdrop-blur">
-          <span class="text-slate-400 text-[11px]">目標鎖定:</span>
-          <span id="targetWordLabel" class="font-bold text-yellow-300 tracking-wider font-mono text-sm sm:text-base">--</span>
-        </div>
+      <!-- 點選式駕駛艙 HUD (注音 / 羅馬拼音模式 3, 4, 5) -->
+      <div id="choiceDock" class="absolute bottom-2 inset-x-2 sm:inset-x-4 z-30 hidden flex flex-col items-center">
+        <div class="w-full bg-slate-950/95 border border-yellow-500/60 rounded-xl p-2 sm:p-2.5 shadow-[0_0_15px_rgba(255,230,0,0.2)]">
+          <!-- 雷達鎖定文字欄 (修正折行問題) -->
+          <div class="flex items-center justify-between px-1 mb-1.5 text-xs">
+            <div class="flex items-center gap-1.5 overflow-hidden">
+              <span class="text-yellow-400 font-pixel text-[10px] sm:text-xs whitespace-nowrap">RADAR:</span>
+              <span id="choiceTargetWord" class="text-cyan-300 font-black text-sm tracking-wider truncate">--</span>
+            </div>
+            <span id="choiceSubHint" class="text-[10px] text-gray-400 whitespace-nowrap">點選按鈕或按 [1]~[5]</span>
+          </div>
 
-        <div class="relative w-full max-w-md">
-          <input 
-            type="text" 
-            id="arcadeTextInput" 
-            autocomplete="off" 
-            autocorrect="off" 
-            autocapitalize="off" 
-            spellcheck="false" 
-            placeholder="點擊此處或直接鍵入..."
-            class="w-full bg-slate-950/90 border-2 border-cyan-400 rounded-xl px-4 py-2.5 text-center text-cyan-100 placeholder-slate-500 font-mono text-base focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/50 shadow-inner"
-          />
-          <div id="inputHintLabel" class="absolute right-3 top-2.5 text-xs text-slate-400 hidden sm:block">
-            按 Enter 發射
+          <!-- 3 或 5 選項按鈕容器 -->
+          <div id="choiceButtonsContainer" class="flex gap-1.5 sm:gap-2 justify-center w-full">
+            <!-- 動態生成按鈕 -->
           </div>
         </div>
       </div>
 
-      <!-- ================= OVERLAY 3: INTERACTIVE MULTIPLE-CHOICE DOCK ================= -->
-      <div id="choiceDock" class="hidden absolute bottom-3 left-0 right-0 flex flex-col items-center px-3 z-30 pointer-events-auto">
-        <div class="bg-slate-950/95 border-2 border-yellow-400 rounded-2xl px-4 py-2.5 shadow-2xl backdrop-blur-md max-w-2xl w-full flex flex-col items-center">
-          <div class="flex items-center justify-between w-full mb-1.5 text-xs">
-            <span class="text-yellow-300 pixel-font text-[10px] sm:text-xs flex items-center gap-1.5">
-              <span class="inline-block w-2.5 h-2.5 rounded-full bg-yellow-400 animate-ping"></span>
-              RADAR LOCK: <span id="choiceTargetPrompt" class="text-pink-400 text-base sm:text-lg font-bold ml-1 font-sans">--</span>
-            </span>
-            <span id="choiceShortcutHint" class="text-[10px] text-slate-400 font-mono">點選按鈕 或 鍵盤按 [1]~[5]</span>
-          </div>
-
-          <!-- Multiple choice button container: 3 or 5 buttons -->
-          <div id="choiceBtnContainer" class="grid gap-2 w-full">
-            <!-- Buttons dynamically generated -->
-          </div>
+      <!-- 標題主選單畫面 -->
+      <div id="titleScreen" class="absolute inset-0 z-40 bg-slate-950/95 flex flex-col items-center justify-center p-4 text-center">
+        <div class="mb-4">
+          <div class="text-[10px] sm:text-xs text-cyan-400 font-pixel tracking-widest mb-1">RETRO 1996 ARCADE</div>
+          <h1 class="text-2xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-cyan-400 to-pink-500 font-pixel leading-tight">
+            GALAXY<br>TYPIST
+          </h1>
+          <p class="text-xs text-cyan-300/80 mt-1">銀河打字戰機 1996</p>
         </div>
+
+        <!-- 模式選擇 -->
+        <div class="w-full max-w-xs flex flex-col gap-2 mb-4">
+          <button data-mode="en" class="mode-select-btn w-full py-2 px-3 bg-cyan-950/60 border border-cyan-400 rounded text-cyan-300 text-xs sm:text-sm font-bold hover:bg-cyan-900/80 active:scale-95 transition-all text-left flex justify-between items-center">
+            <span>🚀 1. 英文打字 (English)</span>
+            <span class="text-[10px] text-gray-400">鍵盤輸入</span>
+          </button>
+          <button data-mode="zh" class="mode-select-btn w-full py-2 px-3 bg-cyan-950/60 border border-cyan-400 rounded text-cyan-300 text-xs sm:text-sm font-bold hover:bg-cyan-900/80 active:scale-95 transition-all text-left flex justify-between items-center">
+            <span>🛰️ 2. 中文詞彙 (Chinese)</span>
+            <span class="text-[10px] text-gray-400">輸入法+Enter</span>
+          </button>
+          <button data-mode="bopomofo" class="mode-select-btn w-full py-2 px-3 bg-yellow-950/60 border border-yellow-400 rounded text-yellow-300 text-xs sm:text-sm font-bold hover:bg-yellow-900/80 active:scale-95 transition-all text-left flex justify-between items-center">
+            <span>👾 3. 初階注音 (Zhuyin)</span>
+            <span class="text-[10px] text-yellow-400/80">3/5選1</span>
+          </button>
+          <button data-mode="pinyin_to_zh" class="mode-select-btn w-full py-2 px-3 bg-pink-950/60 border border-pink-400 rounded text-pink-300 text-xs sm:text-sm font-bold hover:bg-pink-900/80 active:scale-95 transition-all text-left flex justify-between items-center">
+            <span>🌐 4. 拼音對注音 (Pinyin→ㄅ)</span>
+            <span class="text-[10px] text-pink-400/80">外籍專用</span>
+          </button>
+          <button data-mode="zh_to_pinyin" class="mode-select-btn w-full py-2 px-3 bg-emerald-950/60 border border-emerald-400 rounded text-emerald-300 text-xs sm:text-sm font-bold hover:bg-emerald-900/80 active:scale-95 transition-all text-left flex justify-between items-center">
+            <span>🔄 5. 注音對拼音 (ㄅ→Pinyin)</span>
+            <span class="text-[10px] text-emerald-400/80">反向對應</span>
+          </button>
+        </div>
+
+        <button id="btnStartGame" class="w-full max-w-xs py-3 bg-gradient-to-r from-yellow-400 to-amber-500 text-black font-pixel text-xs sm:text-sm font-black rounded-lg shadow-[0_0_20px_rgba(255,230,0,0.6)] active:scale-95 hover:brightness-110">
+          MISSION START
+        </button>
+
+        <!-- 手機加入主畫面引導按鈕 -->
+        <button id="btnShowInstallHelp" class="mt-4 text-gray-400 text-xs hover:text-cyan-300 underline underline-offset-4 flex items-center gap-1">
+          <span>📱 如何安裝至手機主畫面 (App)</span>
+        </button>
       </div>
 
-      <!-- ================= OVERLAY 4: SETTLEMENT SCREEN ================= -->
-      <div id="settlementScreen" class="hidden absolute inset-0 bg-slate-950/95 flex flex-col items-center justify-center p-4 z-40 backdrop-blur-md">
-        <div class="border-2 border-cyan-400 bg-slate-900/90 rounded-2xl p-6 max-w-lg w-full text-center relative shadow-[0_0_40px_rgba(0,240,255,0.3)]">
-          
-          <h2 id="settleTitle" class="pixel-font text-xl sm:text-2xl text-red-500 mb-1">MISSION FAILED</h2>
-          <p id="settleSubtitle" class="text-xs text-slate-400 mb-3">打錯字數超過容許上限！</p>
+      <!-- 結算畫面 (Mission Debriefing) -->
+      <div id="resultScreen" class="absolute inset-0 z-40 bg-slate-950/95 flex flex-col items-center justify-center p-4 text-center hidden">
+        <div id="resultStamp" class="text-5xl sm:text-6xl font-pixel font-black text-yellow-400 drop-shadow-[0_0_15px_#ffe600] mb-2 scale-125 transition-transform duration-300">
+          RANK A
+        </div>
+        <h2 id="resultTitle" class="text-xl font-bold text-cyan-300 mb-4 font-pixel">MISSION DEBRIEF</h2>
 
-          <!-- 1996 Arcade Rank Stamp -->
-          <div class="flex items-center justify-center my-2">
-            <div class="relative w-20 h-20 rounded-full border-4 border-yellow-400 flex items-center justify-center bg-yellow-950/40 transform -rotate-12">
-              <span id="settleRank" class="pixel-font text-4xl text-yellow-300">A</span>
+        <div class="w-full max-w-xs bg-slate-900 border border-cyan-500/50 rounded-xl p-3 text-xs space-y-2 mb-4 font-mono">
+          <div class="flex justify-between border-b border-gray-800 pb-1">
+            <span class="text-gray-400">總得分 (Score):</span>
+            <span id="resScore" class="text-cyan-300 font-bold">0</span>
+          </div>
+          <div class="flex justify-between border-b border-gray-800 pb-1">
+            <span class="text-gray-400">擊墜敵機 (Destroyed):</span>
+            <span id="resEnemies" class="text-yellow-300 font-bold">0</span>
+          </div>
+          <div class="flex justify-between border-b border-gray-800 pb-1">
+            <span class="text-gray-400">輸入準確率 (Accuracy):</span>
+            <span id="resAccuracy" class="text-emerald-400 font-bold">100%</span>
+          </div>
+          <div class="flex justify-between border-b border-gray-800 pb-1">
+            <span class="text-gray-400">打字速度 (WPM / CPM):</span>
+            <span id="resSpeed" class="text-pink-400 font-bold">0 / 0</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-400">最高連擊 (Max Combo):</span>
+            <span id="resCombo" class="text-purple-400 font-bold">0</span>
+          </div>
+        </div>
+
+        <button id="btnRestart" class="w-full max-w-xs py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-pixel text-xs sm:text-sm font-black rounded-lg active:scale-95 shadow-[0_0_15px_rgba(0,243,255,0.5)]">
+          RETRY MISSION
+        </button>
+      </div>
+
+      <!-- 設定彈窗 Modal -->
+      <div id="settingsModal" class="absolute inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden">
+        <div class="w-full max-w-xs bg-slate-900 border-2 border-cyan-400 rounded-xl p-4 text-xs font-mono">
+          <h3 class="text-cyan-300 font-pixel text-xs sm:text-sm mb-4 text-center">SETTINGS</h3>
+
+          <div class="space-y-3">
+            <div>
+              <label class="text-gray-300 block mb-1">容許打錯次數 (Game Over):</label>
+              <select id="cfgMistakes" class="w-full bg-slate-950 border border-cyan-500/60 rounded px-2 py-1 text-cyan-200">
+                <option value="3">3 次 (極限街機)</option>
+                <option value="5" selected>5 次 (標準挑戰)</option>
+                <option value="10">10 次 (休閒模式)</option>
+                <option value="999">無限練習 (No Game Over)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-gray-300 block mb-1">選項數量 (注音/拼音模式):</label>
+              <select id="cfgChoiceCount" class="w-full bg-slate-950 border border-cyan-500/60 rounded px-2 py-1 text-cyan-200">
+                <option value="3">3 個選項 (手機新手推薦)</option>
+                <option value="5" selected>5 個選項 (經典難度)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-gray-300 block mb-1">飛行速度 (下降節奏):</label>
+              <select id="cfgSpeed" class="w-full bg-slate-950 border border-cyan-500/60 rounded px-2 py-1 text-cyan-200">
+                <option value="slow">緩慢巡航 (新手/外籍推薦)</option>
+                <option value="normal" selected>正常節奏 (標準)</option>
+                <option value="fast">疾速突擊 (進階挑戰)</option>
+              </select>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-gray-300">CRT 1996 掃描線濾鏡:</span>
+              <input type="checkbox" id="cfgCRT" checked class="w-4 h-4 accent-cyan-400">
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-gray-300">音效開關:</span>
+              <input type="checkbox" id="cfgAudio" checked class="w-4 h-4 accent-cyan-400">
             </div>
           </div>
 
-          <!-- Comprehensive Stats Grid -->
-          <div class="grid grid-cols-2 gap-2 text-left my-4 text-xs sm:text-sm font-mono bg-slate-950/70 p-3.5 rounded-xl border border-slate-800">
-            <div class="text-slate-400">擊破敵艦數:</div>
-            <div id="statEnemies" class="text-right text-cyan-300 font-bold">0</div>
+          <button id="btnCloseSettings" class="w-full mt-4 py-2 bg-cyan-500 text-black font-bold rounded hover:bg-cyan-400">
+            確認儲存
+          </button>
+        </div>
+      </div>
 
-            <div class="text-slate-400">總輸入字數:</div>
-            <div id="statChars" class="text-right text-cyan-300 font-bold">0 / 0</div>
-
-            <div class="text-slate-400">擊發準確率:</div>
-            <div id="statAccuracy" class="text-right text-green-400 font-bold">100%</div>
-
-            <div class="text-slate-400">打字速度:</div>
-            <div id="statSpeed" class="text-right text-yellow-300 font-bold">0 WPM (0 CPM)</div>
-
-            <div class="text-slate-400">最高連擊 (Combo):</div>
-            <div id="statCombo" class="text-right text-pink-400 font-bold">0</div>
-
-            <div class="text-slate-400">失誤次數:</div>
-            <div id="statMistakes" class="text-right text-red-400 font-bold">0 / 5</div>
+      <!-- 手機安裝 App 引導彈窗 -->
+      <div id="installModal" class="absolute inset-0 z-50 bg-black/85 flex items-center justify-center p-4 hidden">
+        <div class="w-full max-w-xs bg-slate-900 border border-yellow-400 rounded-xl p-4 text-xs font-mono">
+          <h3 class="text-yellow-400 font-bold text-sm mb-3 text-center">📱 加到手機主畫面當作 App</h3>
+          <div class="space-y-3 text-gray-300">
+            <div class="p-2 bg-slate-950 rounded border border-gray-800">
+              <span class="text-cyan-400 font-bold block mb-1">🍎 iPhone (Safari):</span>
+              1. 點擊瀏覽器底部的「分享」圖標 (箭頭向上)<br>
+              2. 往下滑動找到並點擊「加入主畫面」
+            </div>
+            <div class="p-2 bg-slate-950 rounded border border-gray-800">
+              <span class="text-cyan-400 font-bold block mb-1">🤖 Android (Chrome):</span>
+              1. 點擊右上角「三個點選單」<br>
+              2. 點選「安裝應用程式」或「加到主畫面」
+            </div>
           </div>
-
-          <div class="flex space-x-3 justify-center mt-3">
-            <button id="retryBtn" class="arcade-btn px-6 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg pixel-font text-xs shadow-lg">
-              再次作戰 [RETRY]
-            </button>
-            <button id="returnTitleBtn" class="arcade-btn px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg pixel-font text-xs">
-              主選單
-            </button>
-          </div>
+          <button id="btnCloseInstall" class="w-full mt-4 py-2 bg-yellow-400 text-black font-bold rounded">我知道了</button>
         </div>
       </div>
 
     </div>
-
-    <!-- Screen Flash Indicator for Damage -->
-    <div id="damageFlash" class="absolute inset-0 bg-red-600/30 pointer-events-none z-30 hidden transition-opacity"></div>
   </div>
 
-  <!-- ================= MODAL: PWA MOBILE APP INSTALL GUIDE ================= -->
-  <div id="installModal" class="hidden fixed inset-0 bg-black/85 flex items-center justify-center p-4 z-50 backdrop-blur-sm">
-    <div class="bg-slate-900 border-2 border-yellow-400 rounded-2xl p-5 max-w-sm w-full text-left shadow-2xl relative">
-      <h3 class="pixel-font text-xs sm:text-sm text-yellow-300 mb-3 pb-2 border-b border-yellow-500/40 flex items-center justify-between">
-        <span class="flex items-center gap-1.5">📱 手機安裝為 App 指南</span>
-        <button id="closeInstallBtn" class="text-slate-400 hover:text-white font-sans text-base">✕</button>
-      </h3>
-
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-        本遊戲已預載 PWA 獨立視窗設定與 1996 戰機圖示，加到主畫面後即可像原生 App 一樣以<span class="text-yellow-300 font-bold">全螢幕無網址列</span>暢玩：
-      </p>
-
-      <!-- iOS Safari Instructions -->
-      <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 mb-2.5">
-        <div class="flex items-center gap-2 mb-1 text-cyan-300 font-bold text-xs">
-          <span>🍏 iPhone (Safari 瀏覽器)</span>
-        </div>
-        <ol class="text-[11px] text-slate-400 list-decimal list-inside space-y-1">
-          <li>點擊底部工具列中間的「<span class="text-slate-200">分享</span>」按鈕 <span class="text-cyan-400">⎋</span></li>
-          <li>往下滑找到並點選「<span class="text-yellow-300 font-semibold">加入主畫面</span>」</li>
-          <li>點擊右上角「<span class="text-slate-200">新增</span>」，桌面上即會出現銀河戰機圖示！</li>
-        </ol>
-      </div>
-
-      <!-- Android Chrome Instructions -->
-      <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 mb-4">
-        <div class="flex items-center gap-2 mb-1 text-emerald-300 font-bold text-xs">
-          <span>🤖 Android (Chrome 瀏覽器)</span>
-        </div>
-        <ol class="text-[11px] text-slate-400 list-decimal list-inside space-y-1">
-          <li>點擊右上角選單「<span class="text-slate-200">三個點 ⋮</span>」</li>
-          <li>點選「<span class="text-yellow-300 font-semibold">安裝應用程式</span>」或「<span class="text-yellow-300 font-semibold">加到主畫面</span>」</li>
-          <li>確認安裝，即可直接在應用程式列表點擊開啟！</li>
-        </ol>
-      </div>
-
-      <button id="dismissInstallBtn" class="arcade-btn w-full py-2 bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold text-xs pixel-font rounded-lg shadow-lg">
-        我知道了 [GOT IT]
-      </button>
-    </div>
-  </div>
-
-  <!-- ================= MODAL: GAME CONFIG SETTINGS ================= -->
-  <div id="configModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50">
-    <div class="bg-slate-900 border-2 border-cyan-400 rounded-2xl p-5 max-w-sm w-full text-left shadow-2xl">
-      <h3 class="pixel-font text-xs sm:text-sm text-cyan-300 mb-4 pb-2 border-b border-cyan-500/40 flex items-center justify-between">
-        <span>⚙️ 作戰參數自訂</span>
-        <button id="closeConfigBtn" class="text-slate-400 hover:text-white font-sans text-base">✕</button>
-      </h3>
-
-      <!-- Mistake Limit Setting -->
-      <div class="mb-3">
-        <label class="block text-xs text-slate-300 mb-1">容許打錯次數 (Game Over 門檻):</label>
-        <select id="settingMistakeLimit" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-cyan-200">
-          <option value="3">3 次 (硬派街機)</option>
-          <option value="5" selected>5 次 (標準挑戰)</option>
-          <option value="10">10 次 (休閒射擊)</option>
-          <option value="20">20 次 (新手導航)</option>
-          <option value="999">無限練習 (不因打錯結束)</option>
-        </select>
-      </div>
-
-      <!-- Fall Speed Tier -->
-      <div class="mb-3">
-        <div class="flex justify-between items-center text-xs text-slate-300 mb-1">
-          <span>敵機下降速度:</span>
-          <span id="speedModeHint" class="text-[10px] text-yellow-400 font-mono">注音/拼音預設緩慢</span>
-        </div>
-        <select id="settingSpeed" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-cyan-200">
-          <option value="slow">緩慢巡航 (Slow / 外籍推薦練習)</option>
-          <option value="normal">正常標準 (Normal 1996)</option>
-          <option value="fast">快速進襲 (Fast 反應考驗)</option>
-          <option value="insane">星系彈幕 (Bullet Hell 1996 極限)</option>
-        </select>
-      </div>
-
-      <!-- Multiple Choice Count (3 or 5 Options) -->
-      <div class="mb-3">
-        <label class="block text-xs text-slate-300 mb-1">注音/拼音選擇題選項數:</label>
-        <select id="settingChoiceCount" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-cyan-200">
-          <option value="3">3 個選項 (快速辨認 / 鍵盤 1~3)</option>
-          <option value="5" selected>5 個選項 (經典街機 / 鍵盤 1~5)</option>
-        </select>
-      </div>
-
-      <!-- Audio Volume Slider -->
-      <div class="mb-3">
-        <div class="flex justify-between items-center text-xs text-slate-300 mb-1">
-          <span>8-Bit 音效音量:</span>
-          <span id="volumeValueLabel" class="text-cyan-400 font-mono">80%</span>
-        </div>
-        <input type="range" id="settingVolume" min="0" max="100" value="80" class="w-full accent-cyan-400 cursor-pointer">
-      </div>
-
-      <!-- CRT Filter Toggle -->
-      <div class="mb-4 flex items-center justify-between">
-        <span class="text-xs text-slate-300">CRT 掃描線濾鏡:</span>
-        <input type="checkbox" id="settingCRT" checked class="w-4 h-4 accent-cyan-400 cursor-pointer">
-      </div>
-
-      <button id="saveConfigBtn" class="arcade-btn w-full py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-bold text-xs pixel-font shadow-lg">
-        確認套用
-      </button>
-    </div>
-  </div>
-
-  <!-- ================= JAVASCRIPT LOGIC ================= -->
   <script>
-    // --- 1. Synthesized 8-Bit Web Audio Engine ---
-    class SoundEngine {
-      constructor() {
-        this.ctx = null;
-        this.volume = 0.8;
-      }
-
-      init() {
-        if (!this.ctx) {
-          const AudioContext = window.AudioContext || window.webkitAudioContext;
-          this.ctx = new AudioContext();
-        }
-        if (this.ctx && this.ctx.state === 'suspended') {
-          this.ctx.resume();
-        }
-      }
-
-      setVolume(val) {
-        this.volume = Math.max(0, Math.min(1, val));
-      }
-
-      playLaser() {
-        if (!this.ctx || this.volume <= 0) return;
-        const now = this.ctx.currentTime;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
-
-        osc.type = 'sawtooth';
-        osc.frequency.setValueAtTime(880, now);
-        osc.frequency.exponentialRampToValueAtTime(110, now + 0.12);
-
-        gain.gain.setValueAtTime(0.18 * this.volume, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
-
-        osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.12);
-      }
-
-      playExplosion() {
-        if (!this.ctx || this.volume <= 0) return;
-        const now = this.ctx.currentTime;
-        const bufferSize = this.ctx.sampleRate * 0.25;
-        const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
-        const data = buffer.getChannelData(0);
-        for (let i = 0; i < bufferSize; i++) {
-          data[i] = Math.random() * 2 - 1;
-        }
-
-        const noise = this.ctx.createBufferSource();
-        noise.buffer = buffer;
-
-        const filter = this.ctx.createBiquadFilter();
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(750, now);
-        filter.frequency.linearRampToValueAtTime(40, now + 0.25);
-
-        const gain = this.ctx.createGain();
-        gain.gain.setValueAtTime(0.35 * this.volume, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
-
-        noise.connect(filter);
-        filter.connect(gain);
-        gain.connect(this.ctx.destination);
-        noise.start(now);
-      }
-
-      playMistake() {
-        if (!this.ctx || this.volume <= 0) return;
-        const now = this.ctx.currentTime;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
-
-        osc.type = 'square';
-        osc.frequency.setValueAtTime(130, now);
-        osc.frequency.setValueAtTime(85, now + 0.08);
-
-        gain.gain.setValueAtTime(0.25 * this.volume, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
-
-        osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.18);
-      }
-
-      playCombo() {
-        if (!this.ctx || this.volume <= 0) return;
-        const now = this.ctx.currentTime;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
-
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(523.25, now);
-        osc.frequency.setValueAtTime(659.25, now + 0.06);
-        osc.frequency.setValueAtTime(783.99, now + 0.12);
-
-        gain.gain.setValueAtTime(0.22 * this.volume, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.24);
-
-        osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.24);
-      }
-
-      playGameOver() {
-        if (!this.ctx || this.volume <= 0) return;
-        const now = this.ctx.currentTime;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
-
-        osc.type = 'sawtooth';
-        osc.frequency.setValueAtTime(330, now);
-        osc.frequency.linearRampToValueAtTime(60, now + 0.6);
-
-        gain.gain.setValueAtTime(0.3 * this.volume, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
-
-        osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.6);
-      }
-    }
-
-    const sound = new SoundEngine();
-
-    // --- 2. Vocabularies & Phonetic Mappings ---
+    // --- 詞庫與音標字典 ---
     const VOCAB = {
-      en: [
-        "STAR", "LASER", "NOVA", "ORBIT", "CYBER", "PULSE", "WARP", "TITAN",
-        "GALAXY", "PHOTON", "VECTOR", "COSMOS", "RADAR", "ASTRO", "SHIELD",
-        "ROCKET", "PLASMA", "METEOR", "COMET", "FLIGHT", "HYPER", "VORTEX",
-        "QUANTUM", "NEBULA", "CRUISER", "INVADER", "BLASTER", "EXPLORE", "HORIZON"
-      ],
-      zh: [
-        "宇宙", "銀河", "巡航", "光速", "星艦", "軌道", "雷達", "電漿",
-        "護盾", "行星", "超載", "穿梭", "重力", "引力", "探索", "超新星",
-        "雷射", "躍遷", "星雲", "反物質", "黑洞", "導航", "先鋒", "守護者",
-        "流星", "基地", "衝擊", "爆發", "突圍", "殲滅"
-      ],
-      // Full Traditional Taiwanese Zhuyin to Standard Romanized Pinyin
-      phonetics: [
-        { zh: 'ㄅ', py: 'b' },   { zh: 'ㄆ', py: 'p' },   { zh: 'ㄇ', py: 'm' },   { zh: 'ㄈ', py: 'f' },
-        { zh: 'ㄉ', py: 'd' },   { zh: 'ㄊ', py: 't' },   { zh: 'ㄋ', py: 'n' },   { zh: 'ㄌ', py: 'l' },
-        { zh: 'ㄍ', py: 'g' },   { zh: 'ㄎ', py: 'k' },   { zh: 'ㄏ', py: 'h' },   { zh: 'ㄐ', py: 'j' },
-        { zh: 'ㄑ', py: 'q' },   { zh: 'ㄒ', py: 'x' },   { zh: 'ㄓ', py: 'zh' },  { zh: 'ㄔ', py: 'ch' },
-        { zh: 'ㄕ', py: 'sh' },  { zh: 'ㄖ', py: 'r' },   { zh: 'ㄗ', py: 'z' },   { zh: 'ㄘ', py: 'c' },
-        { zh: 'ㄙ', py: 's' },   { zh: 'ㄧ', py: 'yi (i)' }, { zh: 'ㄨ', py: 'wu (u)' }, { zh: 'ㄩ', py: 'yu (ü)' },
-        { zh: 'ㄚ', py: 'a' },   { zh: 'ㄛ', py: 'o' },   { zh: 'ㄜ', py: 'e' },   { zh: 'ㄝ', py: 'ê' },
-        { zh: 'ㄞ', py: 'ai' },  { zh: 'ㄟ', py: 'ei' },  { zh: 'ㄠ', py: 'ao' },  { zh: 'ㄡ', py: 'ou' },
-        { zh: 'ㄢ', py: 'an' },  { zh: 'ㄣ', py: 'en' },  { zh: 'ㄤ', py: 'ang' }, { zh: 'ㄥ', py: 'eng' },
-        { zh: 'ㄦ', py: 'er' }
+      en: ["STAR", "LASER", "NOVA", "ORBIT", "CYBER", "PULSE", "WARP", "TITAN", "GALAXY", "PHOTON", "RADAR", "ASTRO", "SHIELD", "ROCKET", "COMET", "FLIGHT", "HYPER", "VORTEX", "NEBULA", "CRUISER"],
+      zh: ["宇宙", "銀河", "巡航", "光速", "星艦", "軌道", "雷達", "電漿", "護盾", "行星", "超載", "穿梭", "重力", "引力", "探索", "超新星", "雷射", "躍遷", "星雲", "黑洞", "導航", "先鋒", "流星", "基地", "衝擊"],
+      bopomofoList: [
+        { zh: 'ㄅ', py: 'b' }, { zh: 'ㄆ', py: 'p' }, { zh: 'ㄇ', py: 'm' }, { zh: 'ㄈ', py: 'f' },
+        { zh: 'ㄉ', py: 'd' }, { zh: 'ㄊ', py: 't' }, { zh: 'ㄋ', py: 'n' }, { zh: 'ㄌ', py: 'l' },
+        { zh: 'ㄍ', py: 'g' }, { zh: 'ㄎ', py: 'k' }, { zh: 'ㄏ', py: 'h' },
+        { zh: 'ㄐ', py: 'j' }, { zh: 'ㄑ', py: 'q' }, { zh: 'ㄒ', py: 'x' },
+        { zh: 'ㄓ', py: 'zh' }, { zh: 'ㄔ', py: 'ch' }, { zh: 'ㄕ', py: 'sh' }, { zh: 'ㄖ', py: 'r' },
+        { zh: 'ㄗ', py: 'z' }, { zh: 'ㄘ', py: 'c' }, { zh: 'ㄙ', py: 's' },
+        { zh: 'ㄧ', py: 'i' }, { zh: 'ㄨ', py: 'u' }, { zh: 'ㄩ', py: 'ü' },
+        { zh: 'ㄚ', py: 'a' }, { zh: 'ㄛ', py: 'o' }, { zh: 'ㄜ', py: 'e' }, { zh: 'ㄝ', py: 'ê' },
+        { zh: 'ㄞ', py: 'ai' }, { zh: 'ㄟ', py: 'ei' }, { zh: 'ㄠ', py: 'ao' }, { zh: 'ㄡ', py: 'ou' },
+        { zh: 'ㄢ', py: 'an' }, { zh: 'ㄣ', py: 'en' }, { zh: 'ㄤ', py: 'ang' }, { zh: 'ㄥ', py: 'eng' }, { zh: 'ㄦ', py: 'er' }
       ]
     };
 
-    // --- 3. Configuration & State ---
+    // --- 遊戲狀態與參數 ---
     const config = {
-      mode: 'en',               // 'en', 'zh', 'bopomofo', 'pinyinToZh', 'zhToPinyin'
-      mistakeLimit: 5,         // Max mistakes before Game Over
-      speedTier: null,         // 'slow', 'normal', 'fast', 'insane' (if null, auto-defaults based on mode)
-      choiceCount: 5,          // 3 or 5 options
-      crtEnabled: true,
-      volume: 0.8
+      mode: 'en',
+      mistakeLimit: 5,
+      choiceCount: 5,
+      speed: 'normal',
+      crt: true,
+      audio: true
     };
 
     const state = {
@@ -588,385 +350,365 @@
       wave: 1,
       mistakes: 0,
       enemiesDefeated: 0,
-      totalCharsInput: 0,
-      correctCharsInput: 0,
+      totalInputs: 0,
+      correctInputs: 0,
       startTime: 0,
-      lastSpawnTime: 0,
-      shakeAmount: 0,
+      lastSpawn: 0,
       enemies: [],
-      lasers: [],
       particles: [],
-      popups: [],
-      stars: [],
+      lasers: [],
       activeTarget: null,
       currentChoices: []
     };
 
-    // --- 4. DOM Elements ---
-    const canvas = document.getElementById('gameCanvas');
-    const ctx = canvas.getContext('2d');
-
-    const hudScore = document.getElementById('hudScore');
-    const hudWave = document.getElementById('hudWave');
-    const hudCombo = document.getElementById('hudCombo');
-    const hudShield = document.getElementById('hudShield');
-    const hudModeBadge = document.getElementById('hudModeBadge');
-
-    const titleScreen = document.getElementById('titleScreen');
-    const textInputDock = document.getElementById('textInputDock');
-    const arcadeTextInput = document.getElementById('arcadeTextInput');
-    const targetWordLabel = document.getElementById('targetWordLabel');
-    const inputHintLabel = document.getElementById('inputHintLabel');
-
-    const choiceDock = document.getElementById('choiceDock');
-    const choiceTargetPrompt = document.getElementById('choiceTargetPrompt');
-    const choiceShortcutHint = document.getElementById('choiceShortcutHint');
-    const choiceBtnContainer = document.getElementById('choiceBtnContainer');
-
-    const settlementScreen = document.getElementById('settlementScreen');
-    const settleTitle = document.getElementById('settleTitle');
-    const settleSubtitle = document.getElementById('settleSubtitle');
-    const settleRank = document.getElementById('settleRank');
-
-    const statEnemies = document.getElementById('statEnemies');
-    const statChars = document.getElementById('statChars');
-    const statAccuracy = document.getElementById('statAccuracy');
-    const statSpeed = document.getElementById('statSpeed');
-    const statCombo = document.getElementById('statCombo');
-    const statMistakes = document.getElementById('statMistakes');
-
-    const damageFlash = document.getElementById('damageFlash');
-    const crtLayer = document.getElementById('crtLayer');
-
-    // Config Modal Elements
-    const configModal = document.getElementById('configModal');
-    const openSettingsBtn = document.getElementById('openSettingsBtn');
-    const titleConfigBtn = document.getElementById('titleConfigBtn');
-    const closeConfigBtn = document.getElementById('closeConfigBtn');
-    const saveConfigBtn = document.getElementById('saveConfigBtn');
-    const settingMistakeLimit = document.getElementById('settingMistakeLimit');
-    const settingSpeed = document.getElementById('settingSpeed');
-    const settingChoiceCount = document.getElementById('settingChoiceCount');
-    const settingVolume = document.getElementById('settingVolume');
-    const volumeValueLabel = document.getElementById('volumeValueLabel');
-    const settingCRT = document.getElementById('settingCRT');
-
-    // Player Vector Ship Coordinates
-    const playerShip = {
-      x: 0,
-      y: 0,
-      angle: -Math.PI / 2
+    // --- Web Audio API 8-bit 合成音效引擎 ---
+    const AudioEngine = {
+      ctx: null,
+      init() {
+        if (!this.ctx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          this.ctx = new AudioContext();
+        }
+        if (this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      },
+      playLaser() {
+        if (!config.audio) return;
+        this.init();
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(880, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(110, this.ctx.currentTime + 0.12);
+        gain.gain.setValueAtTime(0.2, this.ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.01, this.ctx.currentTime + 0.12);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.12);
+      },
+      playExplode() {
+        if (!config.audio) return;
+        this.init();
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(150, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(30, this.ctx.currentTime + 0.25);
+        gain.gain.setValueAtTime(0.3, this.ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.01, this.ctx.currentTime + 0.25);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.25);
+      },
+      playDamage() {
+        if (!config.audio) return;
+        this.init();
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(80, this.ctx.currentTime);
+        osc.frequency.linearRampToValueAtTime(40, this.ctx.currentTime + 0.3);
+        gain.gain.setValueAtTime(0.4, this.ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.01, this.ctx.currentTime + 0.3);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.3);
+      }
     };
 
-    // --- 5. Canvas Resizing & Parallax Background ---
+    // --- DOM 元素取得 ---
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const hudWave = document.getElementById('hudWave');
+    const hudScore = document.getElementById('hudScore');
+    const hudCombo = document.getElementById('hudCombo');
+    const hudShield = document.getElementById('hudShield');
+    const titleScreen = document.getElementById('titleScreen');
+    const resultScreen = document.getElementById('resultScreen');
+    const typingDock = document.getElementById('typingDock');
+    const choiceDock = document.getElementById('choiceDock');
+    const gameInput = document.getElementById('gameInput');
+    const targetWordDisplay = document.getElementById('targetWordDisplay');
+    const choiceTargetWord = document.getElementById('choiceTargetWord');
+    const choiceButtonsContainer = document.getElementById('choiceButtonsContainer');
+    const damageFlash = document.getElementById('damageFlash');
+    const dangerLine = document.getElementById('dangerLine');
+    const settingsModal = document.getElementById('settingsModal');
+    const installModal = document.getElementById('installModal');
+    const arcadeCabinet = document.getElementById('arcadeCabinet');
+
+    // --- 畫布尺寸自適應調整 ---
     function resizeCanvas() {
-      const rect = canvas.getBoundingClientRect();
+      const rect = canvas.parentElement.getBoundingClientRect();
       canvas.width = rect.width;
       canvas.height = rect.height;
-
-      playerShip.x = canvas.width / 2;
-      playerShip.y = canvas.height - 40;
-
-      const dangerLine = document.getElementById('dangerLineVisual');
-      if (dangerLine) {
-        dangerLine.style.bottom = `${canvas.height * 0.16}px`;
-      }
-
-      state.stars = [];
-      const starCount = Math.floor((canvas.width * canvas.height) / 3200);
-      for (let i = 0; i < starCount; i++) {
-        state.stars.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          size: Math.random() * 1.8 + 0.6,
-          speed: Math.random() * 0.75 + 0.25,
-          color: ['#00f0ff', '#ffffff', '#ff007f', '#ffe600'][Math.floor(Math.random() * 4)]
-        });
-      }
     }
     window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
 
-    // --- 6. Spawning Logic ---
-    function isMultipleChoiceMode(mode = config.mode) {
-      return ['bopomofo', 'pinyinToZh', 'zhToPinyin'].includes(mode);
-    }
-
-    function getEffectiveSpeedTier() {
-      if (config.speedTier) return config.speedTier;
-      // Default to 'slow' for beginner/foreign learning modes, 'normal' for EN/ZH
-      return isMultipleChoiceMode() ? 'slow' : 'normal';
-    }
-
+    // --- 敵機生成邏輯 ---
     function spawnEnemy() {
-      let word = '';
-      let displayPrompt = '';
-      let matchTarget = '';
-      let choiceType = ''; // 'zh' or 'py' for candidate buttons
+      let displayText = '';
+      let matchValue = '';
 
       if (config.mode === 'en') {
-        word = VOCAB.en[Math.floor(Math.random() * VOCAB.en.length)];
-        displayPrompt = word;
-        matchTarget = word;
+        displayText = VOCAB.en[Math.floor(Math.random() * VOCAB.en.length)];
+        matchValue = displayText;
       } else if (config.mode === 'zh') {
-        word = VOCAB.zh[Math.floor(Math.random() * VOCAB.zh.length)];
-        displayPrompt = word;
-        matchTarget = word;
+        displayText = VOCAB.zh[Math.floor(Math.random() * VOCAB.zh.length)];
+        matchValue = displayText;
       } else if (config.mode === 'bopomofo') {
-        // Mode 3: Beginner Zhuyin -> Alien shows Zhuyin, choices are Zhuyin
-        const item = VOCAB.phonetics[Math.floor(Math.random() * VOCAB.phonetics.length)];
-        word = item.zh;
-        displayPrompt = item.zh;
-        matchTarget = item.zh;
-        choiceType = 'zh';
-      } else if (config.mode === 'pinyinToZh') {
-        // Mode 4: Alien shows Pinyin (b, p), choices are Zhuyin (ㄅ, ㄆ)
-        const item = VOCAB.phonetics[Math.floor(Math.random() * VOCAB.phonetics.length)];
-        word = item.py;
-        displayPrompt = item.py;
-        matchTarget = item.zh;
-        choiceType = 'zh';
-      } else if (config.mode === 'zhToPinyin') {
-        // Mode 5: (Reverse) Alien shows Zhuyin (ㄅ, ㄆ), choices are Pinyin (b, p)
-        const item = VOCAB.phonetics[Math.floor(Math.random() * VOCAB.phonetics.length)];
-        word = item.zh;
-        displayPrompt = item.zh;
-        matchTarget = item.py;
-        choiceType = 'py';
+        const item = VOCAB.bopomofoList[Math.floor(Math.random() * VOCAB.bopomofoList.length)];
+        displayText = item.zh;
+        matchValue = item.zh;
+      } else if (config.mode === 'pinyin_to_zh') {
+        const item = VOCAB.bopomofoList[Math.floor(Math.random() * VOCAB.bopomofoList.length)];
+        displayText = item.py;
+        matchValue = item.zh;
+      } else if (config.mode === 'zh_to_pinyin') {
+        const item = VOCAB.bopomofoList[Math.floor(Math.random() * VOCAB.bopomofoList.length)];
+        displayText = item.zh;
+        matchValue = item.py;
       }
 
-      const tier = getEffectiveSpeedTier();
-      let speedBase = 0.45;
-      if (tier === 'slow') speedBase = 0.30;
-      if (tier === 'normal') speedBase = 0.55;
-      if (tier === 'fast') speedBase = 0.85;
-      if (tier === 'insane') speedBase = 1.25;
+      // 依速度設定基礎掉落速度
+      let baseSpeed = 0.45;
+      if (config.speed === 'slow') baseSpeed = 0.28;
+      if (config.speed === 'fast') baseSpeed = 0.75;
+      const speedMultiplier = 1 + (state.wave - 1) * 0.08;
 
-      const waveMultiplier = 1 + (state.wave - 1) * 0.08;
-      const speed = speedBase * waveMultiplier + (Math.random() * 0.12);
+      const enemy = {
+        x: Math.random() * (canvas.width - 90) + 45,
+        y: -30,
+        displayText,
+        matchValue,
+        speed: (baseSpeed + Math.random() * 0.2) * speedMultiplier,
+        color: config.mode.includes('pinyin') ? '#f43f5e' : (config.mode === 'bopomofo' ? '#eab308' : '#00f3ff'),
+        typedLength: 0
+      };
 
-      const margin = 70;
-      const x = margin + Math.random() * (canvas.width - margin * 2);
-      const y = -30;
-
-      state.enemies.push({
-        word: word,
-        displayPrompt: displayPrompt,
-        matchTarget: matchTarget,
-        choiceType: choiceType,
-        currentTyped: '',
-        x: x,
-        y: y,
-        speed: speed,
-        type: Math.floor(Math.random() * 3)
-      });
-
-      if (isMultipleChoiceMode()) {
-        refreshChoiceLock();
-      }
+      state.enemies.push(enemy);
     }
 
-    // --- 7. Multiple Choice Engine (Modes 3, 4, 5) ---
-    function getLowestTargetEnemy() {
-      if (state.enemies.length === 0) return null;
-      let lowest = state.enemies[0];
-      for (let i = 1; i < state.enemies.length; i++) {
-        if (state.enemies[i].y > lowest.y) {
-          lowest = state.enemies[i];
-        }
-      }
-      return lowest;
-    }
-
-    function refreshChoiceLock(forceNew = false) {
-      if (!isMultipleChoiceMode()) return;
-      const target = getLowestTargetEnemy();
-
-      if (!target) {
-        choiceTargetPrompt.innerText = '--';
-        choiceBtnContainer.innerHTML = '';
-        state.currentChoices = [];
+    // --- 鎖定與點選按鈕更新 (針對 3, 4, 5 模式) ---
+    function updateChoiceHUD() {
+      if (!['bopomofo', 'pinyin_to_zh', 'zh_to_pinyin'].includes(config.mode)) {
+        choiceDock.classList.add('hidden');
         return;
       }
 
-      if (forceNew || state.activeTarget !== target) {
-        state.activeTarget = target;
+      choiceDock.classList.remove('hidden');
 
-        if (config.mode === 'pinyinToZh') {
-          choiceTargetPrompt.innerHTML = `<span class="text-emerald-300 font-mono">${target.displayPrompt}</span> <span class="text-slate-400 text-xs font-normal">→ 選注音</span>`;
-        } else if (config.mode === 'zhToPinyin') {
-          choiceTargetPrompt.innerHTML = `<span class="text-violet-300 font-sans text-xl">${target.displayPrompt}</span> <span class="text-slate-400 text-xs font-normal">→ 選拼音 (Pinyin)</span>`;
-        } else {
-          choiceTargetPrompt.innerText = target.displayPrompt;
+      if (state.enemies.length === 0) {
+        choiceTargetWord.innerText = '--';
+        choiceButtonsContainer.innerHTML = '';
+        return;
+      }
+
+      // 鎖定垂直位置最逼近防禦線的敵機
+      let lowestEnemy = state.enemies[0];
+      for (let i = 1; i < state.enemies.length; i++) {
+        if (state.enemies[i].y > lowestEnemy.y) {
+          lowestEnemy = state.enemies[i];
         }
-
-        const count = config.choiceCount; // 3 or 5
-        const isTargetPy = (target.choiceType === 'py');
-        const correctVal = target.matchTarget;
-
-        // Distractor selection based on symbol type
-        const pool = VOCAB.phonetics.filter(item => (isTargetPy ? item.py : item.zh) !== correctVal);
-        const shuffled = [...pool].sort(() => Math.random() - 0.5);
-        const distractors = shuffled.slice(0, count - 1).map(i => (isTargetPy ? i.py : i.zh));
-
-        const choices = [correctVal, ...distractors];
-        choices.sort(() => Math.random() - 0.5);
-
-        state.currentChoices = choices;
-        renderChoiceButtons(choices, target);
       }
-    }
+      state.activeTarget = lowestEnemy;
+      choiceTargetWord.innerText = lowestEnemy.displayText;
 
-    function renderChoiceButtons(choices, target) {
-      choiceBtnContainer.innerHTML = '';
-      const count = choices.length;
+      // 產生 3 或 5 個選項
+      const correctVal = lowestEnemy.matchValue;
+      const count = parseInt(config.choiceCount);
+      const isPickZhuyin = (config.mode === 'bopomofo' || config.mode === 'pinyin_to_zh');
 
-      choiceBtnContainer.className = count === 3 
-        ? 'grid grid-cols-3 gap-3 w-full' 
-        : 'grid grid-cols-5 gap-2 w-full';
+      const distractors = VOCAB.bopomofoList
+        .map(item => isPickZhuyin ? item.zh : item.py)
+        .filter(v => v !== correctVal);
 
-      choiceShortcutHint.innerText = `點選按鈕 或 鍵盤按 [1]~[${count}]`;
+      distractors.sort(() => 0.5 - Math.random());
+      const choices = [correctVal, ...distractors.slice(0, count - 1)];
+      choices.sort(() => 0.5 - Math.random());
+      state.currentChoices = choices;
 
-      choices.forEach((val, idx) => {
+      // 渲染按鈕
+      choiceButtonsContainer.innerHTML = '';
+      choices.forEach((choice, idx) => {
         const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'arcade-btn flex flex-col items-center justify-center p-2.5 sm:p-3 bg-slate-900 border-2 border-yellow-400 hover:bg-yellow-950/80 rounded-xl transition text-yellow-300 active:scale-95 shadow-md';
-        
-        // Font sizing adjusts if text is Pinyin (multi-letter) or Zhuyin (single glyph)
-        const textSizeClass = val.length > 2 ? 'text-lg sm:text-xl font-mono' : 'text-2xl sm:text-3xl font-sans';
-
+        btn.className = 'choice-btn flex-1 py-2 sm:py-2.5 rounded-lg text-cyan-300 font-bold text-base sm:text-lg flex flex-col items-center justify-center';
         btn.innerHTML = `
-          <span class="${textSizeClass} font-bold text-white hover:text-yellow-300">${val}</span>
-          <span class="text-[10px] text-yellow-400/80 font-mono mt-0.5 border border-yellow-600/40 px-1.5 py-0.2 rounded bg-black/60">[${idx + 1}]</span>
+          <span>${choice}</span>
+          <span class="text-[9px] text-gray-400 font-pixel mt-0.5">[${idx + 1}]</span>
         `;
-        btn.onclick = () => {
-          handleChoiceSelection(val);
-        };
-        choiceBtnContainer.appendChild(btn);
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          handleChoiceSelection(choice);
+        });
+        choiceButtonsContainer.appendChild(btn);
       });
     }
 
-    function handleChoiceSelection(val) {
-      if (!state.isRunning || !isMultipleChoiceMode()) return;
+    // --- 點選答題判定 ---
+    function handleChoiceSelection(selectedValue) {
+      if (!state.isRunning || !state.activeTarget) return;
 
-      state.totalCharsInput++;
-      const target = getLowestTargetEnemy();
+      state.totalInputs++;
+      if (selectedValue === state.activeTarget.matchValue) {
+        state.correctInputs++;
+        state.score += 150 + state.combo * 15;
+        state.combo++;
+        if (state.combo > state.maxCombo) state.maxCombo = state.combo;
+        state.enemiesDefeated++;
 
-      if (target && target.matchTarget === val) {
-        state.correctCharsInput++;
-        const idx = state.enemies.indexOf(target);
-        destroyEnemy(idx);
-        refreshChoiceLock(true);
+        createExplosion(state.activeTarget.x, state.activeTarget.y, state.activeTarget.color);
+        AudioEngine.playExplode();
+
+        // 移除被擊破敵機
+        state.enemies = state.enemies.filter(e => e !== state.activeTarget);
+        state.activeTarget = null;
+        updateChoiceHUD();
       } else {
-        recordMistake(`WRONG [${val}]`);
+        triggerMistake();
+      }
+      updateHUD();
+    }
+
+    // --- 打錯或失誤處理 ---
+    function triggerMistake() {
+      state.combo = 0;
+      state.mistakes++;
+      AudioEngine.playDamage();
+
+      damageFlash.style.opacity = '1';
+      setTimeout(() => { damageFlash.style.opacity = '0'; }, 120);
+
+      updateHUD();
+      if (config.mistakeLimit !== 999 && state.mistakes >= config.mistakeLimit) {
+        endGame(false);
       }
     }
 
-    // --- 8. Combat & Scoring ---
-    function fireLaser(target) {
-      playerShip.angle = Math.atan2(target.y - playerShip.y, target.x - playerShip.x);
-      let laserColor = '#00f0ff';
-      if (config.mode === 'zh') laserColor = '#ff007f';
-      if (config.mode === 'pinyinToZh') laserColor = '#10b981';
-      if (config.mode === 'zhToPinyin') laserColor = '#a855f7';
-
-      state.lasers.push({
-        x1: playerShip.x,
-        y1: playerShip.y - 12,
-        x2: target.x,
-        y2: target.y,
-        life: 1.0,
-        color: laserColor
-      });
-      sound.playLaser();
-    }
-
-    function createExplosion(x, y, color = '#00f0ff') {
-      const pCount = 22;
-      for (let i = 0; i < pCount; i++) {
-        const angle = Math.random() * Math.PI * 2;
-        const speed = Math.random() * 4.2 + 1.2;
+    // --- 爆炸粒子效果 ---
+    function createExplosion(x, y, color) {
+      for (let i = 0; i < 18; i++) {
         state.particles.push({
-          x: x,
-          y: y,
-          vx: Math.cos(angle) * speed,
-          vy: Math.sin(angle) * speed,
-          life: 1.0,
-          decay: Math.random() * 0.03 + 0.02,
-          size: Math.random() * 3.2 + 1.5,
-          color: color
+          x, y,
+          vx: (Math.random() - 0.5) * 8,
+          vy: (Math.random() - 0.5) * 8,
+          alpha: 1,
+          size: Math.random() * 4 + 2,
+          color: color || '#00f3ff'
         });
       }
     }
 
-    function addPopup(text, x, y, color = '#ffe600') {
-      state.popups.push({
-        text: text,
-        x: x,
-        y: y,
-        vy: -1.2,
-        life: 1.0,
-        color: color
-      });
-    }
+    // --- 遊戲主循環 ---
+    function updateGame(timestamp) {
+      if (!state.isRunning) return;
 
-    function destroyEnemy(index) {
-      const enemy = state.enemies[index];
-      if (!enemy) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      fireLaser(enemy);
-      let boomColor = '#00f0ff';
-      if (config.mode === 'pinyinToZh') boomColor = '#10b981';
-      if (config.mode === 'zhToPinyin') boomColor = '#a855f7';
-
-      createExplosion(enemy.x, enemy.y, boomColor);
-      sound.playExplosion();
-
-      state.combo++;
-      if (state.combo > state.maxCombo) state.maxCombo = state.combo;
-
-      const points = 100 + (state.combo * 20);
-      state.score += points;
-      state.enemiesDefeated++;
-
-      addPopup(`+${points}`, enemy.x, enemy.y, '#00f0ff');
-
-      if (state.combo > 1 && state.combo % 5 === 0) {
-        sound.playCombo();
-        addPopup(`${state.combo} COMBO!`, playerShip.x, playerShip.y - 50, '#ffe600');
+      // 檢查生成新敵機
+      const spawnInterval = Math.max(1300, 3200 - state.wave * 180);
+      if (timestamp - state.lastSpawn > spawnInterval && state.enemies.length < 5) {
+        spawnEnemy();
+        state.lastSpawn = timestamp;
+        if (['bopomofo', 'pinyin_to_zh', 'zh_to_pinyin'].includes(config.mode)) {
+          updateChoiceHUD();
+        }
       }
 
-      state.enemies.splice(index, 1);
-      if (state.activeTarget === enemy) state.activeTarget = null;
+      // 移動與繪製敵機
+      const bottomLimit = canvas.height - 75;
+      for (let i = state.enemies.length - 1; i >= 0; i--) {
+        const e = state.enemies[i];
+        e.y += e.speed;
 
-      if (state.enemiesDefeated % 8 === 0) {
-        state.wave++;
-        addPopup(`WAVE ${state.wave}!`, canvas.width / 2, canvas.height / 2, '#ff007f');
+        // 敵機繪製 (1996 向量街機風格)
+        ctx.save();
+        ctx.translate(e.x, e.y);
+
+        // 敵機機身
+        ctx.strokeStyle = e.color;
+        ctx.fillStyle = '#081026';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(0, 16);
+        ctx.lineTo(-14, -10);
+        ctx.lineTo(0, -4);
+        ctx.lineTo(14, -10);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+
+        // 目標標籤文字
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 16px "Noto Sans TC", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(e.displayText, 0, -16);
+        ctx.restore();
+
+        // 突破防禦線檢查
+        if (e.y >= bottomLimit) {
+          state.enemies.splice(i, 1);
+          triggerMistake();
+          if (['bopomofo', 'pinyin_to_zh', 'zh_to_pinyin'].includes(config.mode)) {
+            updateChoiceHUD();
+          }
+        }
       }
 
-      updateHUD();
-    }
+      // 更新粒子
+      for (let i = state.particles.length - 1; i >= 0; i--) {
+        const p = state.particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= 0.035;
 
-    function recordMistake(popupMsg = 'MISS!') {
-      sound.playMistake();
-      state.mistakes++;
-      state.combo = 0;
-      state.shakeAmount = 10;
-
-      damageFlash.classList.remove('hidden');
-      setTimeout(() => damageFlash.classList.add('hidden'), 120);
-
-      addPopup(popupMsg, playerShip.x, playerShip.y - 40, '#ff007f');
-      updateHUD();
-
-      if (config.mistakeLimit !== 999 && state.mistakes >= config.mistakeLimit) {
-        triggerGameOver('SHIELD BREACHED');
+        if (p.alpha <= 0) {
+          state.particles.splice(i, 1);
+        } else {
+          ctx.save();
+          ctx.globalAlpha = p.alpha;
+          ctx.fillStyle = p.color;
+          ctx.fillRect(p.x, p.y, p.size, p.size);
+          ctx.restore();
+        }
       }
+
+      // 玩家防禦底線戰機繪製
+      const shipX = canvas.width / 2;
+      const shipY = canvas.height - 35;
+      ctx.save();
+      ctx.strokeStyle = '#ffe600';
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.moveTo(shipX, shipY - 18);
+      ctx.lineTo(shipX - 16, shipY + 12);
+      ctx.lineTo(shipX, shipY + 4);
+      ctx.lineTo(shipX + 16, shipY + 12);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.restore();
+
+      requestAnimationFrame(updateGame);
     }
 
-    // --- 9. Start / End / Reset Lifecycle ---
-    function startGame(mode) {
-      sound.init();
-      config.mode = mode;
+    // --- 更新頂部 HUD 數值 ---
+    function updateHUD() {
+      hudWave.innerText = state.wave;
+      hudScore.innerText = String(state.score).padStart(6, '0');
+      hudCombo.innerText = `x${state.combo}`;
+      const limitStr = config.mistakeLimit === 999 ? '∞' : config.mistakeLimit;
+      hudShield.innerText = `${state.mistakes}/${limitStr}`;
+    }
+
+    // --- 開始遊戲 ---
+    function startGame() {
+      AudioEngine.init();
+      resizeCanvas();
 
       state.isRunning = true;
       state.score = 0;
@@ -975,483 +717,190 @@
       state.wave = 1;
       state.mistakes = 0;
       state.enemiesDefeated = 0;
-      state.totalCharsInput = 0;
-      state.correctCharsInput = 0;
+      state.totalInputs = 0;
+      state.correctInputs = 0;
       state.startTime = Date.now();
-      state.lastSpawnTime = Date.now();
+      state.lastSpawn = 0;
       state.enemies = [];
-      state.lasers = [];
       state.particles = [];
-      state.popups = [];
       state.activeTarget = null;
-      state.currentChoices = [];
 
       titleScreen.classList.add('hidden');
-      settlementScreen.classList.add('hidden');
+      resultScreen.classList.add('hidden');
+      dangerLine.classList.remove('hidden');
 
-      const modeNames = {
-        en: 'MODE: EN-TYPE',
-        zh: 'MODE: 中文詞彙',
-        bopomofo: 'MODE: 初階注音',
-        pinyinToZh: 'MODE: 拼音對注音',
-        zhToPinyin: 'MODE: 注音對拼音'
-      };
-      hudModeBadge.innerText = modeNames[mode] || 'MODE';
-
-      if (isMultipleChoiceMode(mode)) {
-        textInputDock.classList.add('hidden');
+      if (['bopomofo', 'pinyin_to_zh', 'zh_to_pinyin'].includes(config.mode)) {
+        typingDock.classList.add('hidden');
         choiceDock.classList.remove('hidden');
-        refreshChoiceLock(true);
       } else {
         choiceDock.classList.add('hidden');
-        textInputDock.classList.remove('hidden');
-
-        if (config.mode === 'zh') {
-          inputHintLabel.innerText = '按 Enter 發射';
-          arcadeTextInput.placeholder = '中文輸入法鍵入後按 Enter 發射...';
-        } else {
-          inputHintLabel.innerText = '敲擊鍵盤字母直接阻擊';
-          arcadeTextInput.placeholder = '敲擊上方敵艦英文字母...';
-        }
-        arcadeTextInput.value = '';
-        targetWordLabel.innerText = '--';
-        arcadeTextInput.focus();
+        typingDock.classList.remove('hidden');
+        gameInput.value = '';
+        gameInput.focus();
       }
 
       updateHUD();
-      resizeCanvas();
+      requestAnimationFrame(updateGame);
     }
 
-    function triggerGameOver(reasonText = 'MISSION FAILED') {
+    // --- 結束遊戲與結算畫面 ---
+    function endGame(victory) {
       state.isRunning = false;
-      sound.playGameOver();
-
-      textInputDock.classList.add('hidden');
+      dangerLine.classList.add('hidden');
+      typingDock.classList.add('hidden');
       choiceDock.classList.add('hidden');
-      settlementScreen.classList.remove('hidden');
 
-      settleTitle.innerText = reasonText;
-      settleSubtitle.innerText = reasonText === 'BASE OVERRUN' 
-        ? '敵艦衝破最後防衛線，基地遭受重創！' 
-        : `打錯字數達到設定上限 (${config.mistakeLimit}次)，護盾力竭！`;
-
-      const durationMinutes = Math.max(0.1, (Date.now() - state.startTime) / 60000);
-      const acc = state.totalCharsInput > 0 
-        ? Math.round((state.correctCharsInput / state.totalCharsInput) * 100) 
-        : 100;
-      const cpm = Math.round(state.correctCharsInput / durationMinutes);
+      const elapsedMinutes = Math.max(0.1, (Date.now() - state.startTime) / 60000);
+      const acc = state.totalInputs > 0 ? Math.round((state.correctInputs / state.totalInputs) * 100) : 100;
+      const cpm = Math.round(state.correctInputs / elapsedMinutes);
       const wpm = Math.round(cpm / 5);
 
-      statEnemies.innerText = state.enemiesDefeated;
-      statChars.innerText = `${state.correctCharsInput} / ${state.totalCharsInput}`;
-      statAccuracy.innerText = `${acc}%`;
-      statSpeed.innerText = `${wpm} WPM (${cpm} CPM)`;
-      statCombo.innerText = state.maxCombo;
-      statMistakes.innerText = `${state.mistakes} / ${config.mistakeLimit === 999 ? '∞' : config.mistakeLimit}`;
+      let rank = 'D';
+      if (acc >= 95 && state.enemiesDefeated >= 15) rank = 'S';
+      else if (acc >= 85 && state.enemiesDefeated >= 10) rank = 'A';
+      else if (acc >= 70) rank = 'B';
+      else if (acc >= 50) rank = 'C';
 
-      let rank = 'C';
-      if (acc >= 95 && wpm >= 35) rank = 'S';
-      else if (acc >= 90 && wpm >= 25) rank = 'A';
-      else if (acc >= 80 && wpm >= 15) rank = 'B';
-      else if (acc < 65) rank = 'D';
+      const stamp = document.getElementById('resultStamp');
+      stamp.innerText = `RANK ${rank}`;
+      stamp.className = `text-5xl sm:text-6xl font-pixel font-black mb-2 ${
+        rank === 'S' || rank === 'A' ? 'text-yellow-400 drop-shadow-[0_0_15px_#ffe600]' : 'text-cyan-400'
+      }`;
 
-      settleRank.innerText = rank;
+      document.getElementById('resScore').innerText = state.score;
+      document.getElementById('resEnemies').innerText = state.enemiesDefeated;
+      document.getElementById('resAccuracy').innerText = `${acc}%`;
+      document.getElementById('resSpeed').innerText = `${wpm} / ${cpm}`;
+      document.getElementById('resCombo').innerText = state.maxCombo;
+
+      resultScreen.classList.remove('hidden');
     }
 
-    function updateHUD() {
-      hudScore.innerText = String(state.score).padStart(6, '0');
-      hudCombo.innerText = `x${state.combo}`;
-      hudWave.innerText = `WAVE: ${state.wave}`;
-      hudShield.innerText = `${state.mistakes} / ${config.mistakeLimit === 999 ? '∞' : config.mistakeLimit}`;
+    // --- 鍵盤監聽事件 (數字鍵 1~5 快捷發射 & 英文打字直接擊發) ---
+    window.addEventListener('keydown', (e) => {
+      // 數字鍵快捷選取 (針對 3, 4, 5 模式)
+      if (['bopomofo', 'pinyin_to_zh', 'zh_to_pinyin'].includes(config.mode) && state.isRunning) {
+        const num = parseInt(e.key);
+        if (num >= 1 && num <= state.currentChoices.length) {
+          e.preventDefault();
+          handleChoiceSelection(state.currentChoices[num - 1]);
+        }
+      }
+
+      // 英文模式直接打字鎖定擊發
+      if (config.mode === 'en' && state.isRunning) {
+        if (e.key.length === 1 && /[a-zA-Z]/.test(e.key)) {
+          const char = e.key.toUpperCase();
+          state.totalInputs++;
+
+          let hit = false;
+          for (let i = 0; i < state.enemies.length; i++) {
+            const enemy = state.enemies[i];
+            if (enemy.displayText[enemy.typedLength] === char) {
+              enemy.typedLength++;
+              hit = true;
+              state.correctInputs++;
+              AudioEngine.playLaser();
+
+              if (enemy.typedLength >= enemy.displayText.length) {
+                state.score += 200 + state.combo * 20;
+                state.combo++;
+                if (state.combo > state.maxCombo) state.maxCombo = state.combo;
+                state.enemiesDefeated++;
+                createExplosion(enemy.x, enemy.y, enemy.color);
+                AudioEngine.playExplode();
+                state.enemies.splice(i, 1);
+              }
+              break;
+            }
+          }
+
+          if (!hit) triggerMistake();
+          updateHUD();
+        }
+      }
+    });
+
+    // --- 中文輸入送出發射 (模式 2) ---
+    function submitChineseInput() {
+      const val = gameInput.value.trim();
+      if (!val || !state.isRunning) return;
+
+      state.totalInputs++;
+      let hitIdx = -1;
+      for (let i = 0; i < state.enemies.length; i++) {
+        if (state.enemies[i].displayText === val) {
+          hitIdx = i;
+          break;
+        }
+      }
+
+      if (hitIdx !== -1) {
+        const enemy = state.enemies[hitIdx];
+        state.correctInputs++;
+        state.score += 250 + state.combo * 25;
+        state.combo++;
+        if (state.combo > state.maxCombo) state.maxCombo = state.combo;
+        state.enemiesDefeated++;
+        createExplosion(enemy.x, enemy.y, enemy.color);
+        AudioEngine.playExplode();
+        state.enemies.splice(hitIdx, 1);
+        gameInput.value = '';
+      } else {
+        triggerMistake();
+      }
+      updateHUD();
     }
 
-    // --- 10. Inputs & Keyboard Listeners ---
-
-    // A. Chinese Mode (Enter submission)
-    arcadeTextInput.addEventListener('keydown', (e) => {
-      if (!state.isRunning || config.mode !== 'zh') return;
+    gameInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
-        const val = arcadeTextInput.value.trim();
-        if (!val) return;
-
-        state.totalCharsInput += val.length;
-        let matchedIdx = -1;
-        let lowestY = -999;
-
-        for (let i = 0; i < state.enemies.length; i++) {
-          const en = state.enemies[i];
-          if (en.word === val && en.y > lowestY) {
-            lowestY = en.y;
-            matchedIdx = i;
-          }
-        }
-
-        if (matchedIdx !== -1) {
-          state.correctCharsInput += val.length;
-          destroyEnemy(matchedIdx);
-        } else {
-          recordMistake(`MISS [${val}]`);
-        }
-        arcadeTextInput.value = '';
-        targetWordLabel.innerText = '--';
+        submitChineseInput();
       }
     });
+    document.getElementById('btnManualShoot').addEventListener('click', submitChineseInput);
 
-    // B. Direct English Typing & Number Row Shortcuts [1]~[5]
-    window.addEventListener('keydown', (e) => {
-      if (!state.isRunning) return;
-      if (e.ctrlKey || e.altKey || e.metaKey || e.key === 'Tab') return;
-
-      // Multiple Choice Modes: Shortcuts 1~3 or 1~5
-      if (isMultipleChoiceMode()) {
-        const allowedKeys = config.choiceCount === 3 ? ['1', '2', '3'] : ['1', '2', '3', '4', '5'];
-        if (allowedKeys.includes(e.key)) {
-          const idx = parseInt(e.key, 10) - 1;
-          if (state.currentChoices && state.currentChoices[idx]) {
-            handleChoiceSelection(state.currentChoices[idx]);
-            e.preventDefault();
-          }
-        }
-        return;
-      }
-
-      // Mode 1: English direct letter match
-      if (config.mode === 'en') {
-        if (e.key.length !== 1 || !/[a-zA-Z]/.test(e.key)) return;
-        const char = e.key.toUpperCase();
-        state.totalCharsInput++;
-
-        if (!state.activeTarget || !state.enemies.includes(state.activeTarget)) {
-          let chosen = null;
-          let maxY = -999;
-          for (const en of state.enemies) {
-            if (en.word.startsWith(char) && en.y > maxY) {
-              maxY = en.y;
-              chosen = en;
-            }
-          }
-
-          if (chosen) {
-            state.activeTarget = chosen;
-            chosen.currentTyped = char;
-            state.correctCharsInput++;
-            fireLaser(chosen);
-
-            if (chosen.currentTyped === chosen.word) {
-              destroyEnemy(state.enemies.indexOf(chosen));
-              state.activeTarget = null;
-            } else {
-              targetWordLabel.innerText = `${chosen.word} (${chosen.currentTyped})`;
-            }
-          } else {
-            recordMistake(`MISS '${char}'`);
-          }
-        } else {
-          const target = state.activeTarget;
-          const nextIdx = target.currentTyped.length;
-          if (target.word[nextIdx] === char) {
-            target.currentTyped += char;
-            state.correctCharsInput++;
-            fireLaser(target);
-
-            if (target.currentTyped === target.word) {
-              destroyEnemy(state.enemies.indexOf(target));
-              state.activeTarget = null;
-              targetWordLabel.innerText = '--';
-            } else {
-              targetWordLabel.innerText = `${target.word} (${target.currentTyped})`;
-            }
-          } else {
-            recordMistake(`MISS '${char}'`);
-          }
-        }
-        e.preventDefault();
-      }
+    // --- 模式切換按鈕綁定 ---
+    document.querySelectorAll('.mode-select-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.mode-select-btn').forEach(b => {
+          b.classList.remove('ring-2', 'ring-cyan-300', 'bg-cyan-900/90');
+        });
+        btn.classList.add('ring-2', 'ring-cyan-300', 'bg-cyan-900/90');
+        config.mode = btn.dataset.mode;
+      });
     });
 
-    // --- 11. Main Game Engine Loop ---
-    let lastTime = performance.now();
+    // --- 事件監聽 ---
+    document.getElementById('btnStartGame').addEventListener('click', startGame);
+    document.getElementById('btnRestart').addEventListener('click', startGame);
 
-    function gameLoop(now) {
-      requestAnimationFrame(gameLoop);
-      const dt = (now - lastTime) / 1000;
-      lastTime = now;
+    document.getElementById('btnOpenSettings').addEventListener('click', () => {
+      settingsModal.classList.remove('hidden');
+    });
+    document.getElementById('btnCloseSettings').addEventListener('click', () => {
+      config.mistakeLimit = parseInt(document.getElementById('cfgMistakes').value);
+      config.choiceCount = parseInt(document.getElementById('cfgChoiceCount').value);
+      config.speed = document.getElementById('cfgSpeed').value;
+      config.crt = document.getElementById('cfgCRT').checked;
+      config.audio = document.getElementById('cfgAudio').checked;
 
-      ctx.save();
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (config.crt) arcadeCabinet.classList.add('crt');
+      else arcadeCabinet.classList.remove('crt');
 
-      if (state.shakeAmount > 0) {
-        const sx = (Math.random() - 0.5) * state.shakeAmount;
-        const sy = (Math.random() - 0.5) * state.shakeAmount;
-        ctx.translate(sx, sy);
-        state.shakeAmount *= 0.88;
-        if (state.shakeAmount < 0.2) state.shakeAmount = 0;
-      }
-
-      // Parallax Stars
-      for (const s of state.stars) {
-        s.y += s.speed;
-        if (s.y > canvas.height) {
-          s.y = 0;
-          s.x = Math.random() * canvas.width;
-        }
-        ctx.fillStyle = s.color;
-        ctx.fillRect(s.x, s.y, s.size, s.size);
-      }
-
-      if (state.isRunning) {
-        const interval = Math.max(1200, 3200 - (state.wave * 180));
-        if (Date.now() - state.lastSpawnTime > interval) {
-          spawnEnemy();
-          state.lastSpawnTime = Date.now();
-        }
-
-        const defenseLineY = canvas.height * 0.84;
-
-        // Update Enemies
-        for (let i = state.enemies.length - 1; i >= 0; i--) {
-          const en = state.enemies[i];
-          en.y += en.speed;
-
-          if (en.y >= defenseLineY) {
-            createExplosion(en.x, en.y, '#ff007f');
-            state.enemies.splice(i, 1);
-            if (state.activeTarget === en) state.activeTarget = null;
-            recordMistake('LINE BREACHED!');
-
-            if (isMultipleChoiceMode()) {
-              refreshChoiceLock(true);
-            }
-          }
-        }
-      }
-
-      // Draw Lasers
-      for (let i = state.lasers.length - 1; i >= 0; i--) {
-        const l = state.lasers[i];
-        ctx.strokeStyle = l.color;
-        ctx.lineWidth = 3.5 * l.life;
-        ctx.shadowBlur = 12;
-        ctx.shadowColor = l.color;
-        ctx.beginPath();
-        ctx.moveTo(l.x1, l.y1);
-        ctx.lineTo(l.x2, l.y2);
-        ctx.stroke();
-        ctx.shadowBlur = 0;
-
-        l.life -= 0.12;
-        if (l.life <= 0) state.lasers.splice(i, 1);
-      }
-
-      // Draw Enemies
-      for (const en of state.enemies) {
-        const isTargeted = (state.activeTarget === en);
-
-        ctx.save();
-        ctx.translate(en.x, en.y);
-
-        let shipColor = '#00f0ff';
-        if (config.mode === 'pinyinToZh') shipColor = '#10b981';
-        if (config.mode === 'zhToPinyin') shipColor = '#a855f7';
-        if (isTargeted) shipColor = '#ffe600';
-
-        // 1996 Vector Alien Spacecraft
-        ctx.strokeStyle = shipColor;
-        ctx.lineWidth = 2;
-        ctx.beginPath();
-        if (en.type === 0) {
-          ctx.moveTo(0, 16);
-          ctx.lineTo(-14, -10);
-          ctx.lineTo(0, -4);
-          ctx.lineTo(14, -10);
-          ctx.closePath();
-        } else if (en.type === 1) {
-          ctx.moveTo(-16, -12);
-          ctx.lineTo(-8, 14);
-          ctx.lineTo(0, 4);
-          ctx.lineTo(8, 14);
-          ctx.lineTo(16, -12);
-          ctx.closePath();
-        } else {
-          ctx.moveTo(0, 18);
-          ctx.lineTo(-12, 0);
-          ctx.lineTo(-8, -12);
-          ctx.lineTo(8, -12);
-          ctx.lineTo(12, 0);
-          ctx.closePath();
-        }
-        ctx.stroke();
-
-        // Lock-On Reticle
-        if (isTargeted) {
-          ctx.strokeStyle = '#ffe600';
-          ctx.lineWidth = 1.5;
-          ctx.strokeRect(-26, -34, 52, 56);
-        }
-
-        // Text Badge
-        ctx.font = 'bold 15px "Chakra Petch", monospace';
-        const txt = en.displayPrompt;
-        const textWidth = ctx.measureText(txt).width;
-        ctx.fillStyle = 'rgba(5, 5, 15, 0.88)';
-        ctx.fillRect(-textWidth / 2 - 8, -34, textWidth + 16, 20);
-        ctx.strokeStyle = shipColor;
-        ctx.strokeRect(-textWidth / 2 - 8, -34, textWidth + 16, 20);
-
-        // Word Rendering
-        if (config.mode === 'en') {
-          const typedLen = en.currentTyped.length;
-          const matched = en.word.slice(0, typedLen);
-          const remain = en.word.slice(typedLen);
-
-          ctx.textAlign = 'left';
-          const startX = -textWidth / 2;
-
-          ctx.fillStyle = '#39ff14';
-          ctx.fillText(matched, startX, -20);
-          const mWidth = ctx.measureText(matched).width;
-
-          ctx.fillStyle = '#ffffff';
-          ctx.fillText(remain, startX + mWidth, -20);
-        } else if (config.mode === 'pinyinToZh') {
-          ctx.textAlign = 'center';
-          ctx.fillStyle = isTargeted ? '#ffe600' : '#34d399';
-          ctx.fillText(en.displayPrompt, 0, -20);
-        } else if (config.mode === 'zhToPinyin') {
-          ctx.textAlign = 'center';
-          ctx.fillStyle = isTargeted ? '#ffe600' : '#c084fc';
-          ctx.fillText(en.displayPrompt, 0, -20);
-        } else {
-          ctx.textAlign = 'center';
-          ctx.fillStyle = isTargeted ? '#ffe600' : '#ffffff';
-          ctx.fillText(en.word, 0, -20);
-        }
-
-        ctx.restore();
-      }
-
-      // Draw Explosions
-      for (let i = state.particles.length - 1; i >= 0; i--) {
-        const p = state.particles[i];
-        p.x += p.vx;
-        p.y += p.vy;
-        p.life -= p.decay;
-
-        ctx.fillStyle = p.color;
-        ctx.globalAlpha = Math.max(0, p.life);
-        ctx.fillRect(p.x, p.y, p.size, p.size);
-        ctx.globalAlpha = 1.0;
-
-        if (p.life <= 0) state.particles.splice(i, 1);
-      }
-
-      // Draw Floating Popups
-      for (let i = state.popups.length - 1; i >= 0; i--) {
-        const pop = state.popups[i];
-        pop.y += pop.vy;
-        pop.life -= 0.02;
-
-        ctx.font = 'bold 13px "Press Start 2P", monospace';
-        ctx.fillStyle = pop.color;
-        ctx.globalAlpha = Math.max(0, pop.life);
-        ctx.textAlign = 'center';
-        ctx.fillText(pop.text, pop.x, pop.y);
-        ctx.globalAlpha = 1.0;
-
-        if (pop.life <= 0) state.popups.splice(i, 1);
-      }
-
-      // Draw Player Fighter Ship
-      ctx.save();
-      ctx.translate(playerShip.x, playerShip.y);
-      ctx.strokeStyle = '#00f0ff';
-      ctx.shadowColor = '#00f0ff';
-      ctx.shadowBlur = 10;
-      ctx.lineWidth = 2.5;
-
-      ctx.beginPath();
-      ctx.moveTo(0, -18);
-      ctx.lineTo(14, 14);
-      ctx.lineTo(6, 10);
-      ctx.lineTo(0, 16);
-      ctx.lineTo(-6, 10);
-      ctx.lineTo(-14, 14);
-      ctx.closePath();
-      ctx.stroke();
-
-      // Thruster
-      ctx.strokeStyle = '#ff007f';
-      ctx.beginPath();
-      ctx.moveTo(-4, 15);
-      ctx.lineTo(0, 22 + Math.random() * 6);
-      ctx.lineTo(4, 15);
-      ctx.stroke();
-
-      ctx.restore();
-      ctx.restore();
-    }
-
-    // --- 12. Modal & Setup Controls ---
-    titleConfigBtn.onclick = () => configModal.classList.remove('hidden');
-    openSettingsBtn.onclick = () => configModal.classList.remove('hidden');
-    closeConfigBtn.onclick = () => configModal.classList.add('hidden');
-
-    settingVolume.oninput = () => {
-      volumeValueLabel.innerText = `${settingVolume.value}%`;
-    };
-
-    saveConfigBtn.onclick = () => {
-      config.mistakeLimit = parseInt(settingMistakeLimit.value, 10);
-      config.speedTier = settingSpeed.value;
-      config.choiceCount = parseInt(settingChoiceCount.value, 10);
-      config.crtEnabled = settingCRT.checked;
-      config.volume = parseInt(settingVolume.value, 10) / 100;
-      sound.setVolume(config.volume);
-
-      crtLayer.style.display = config.crtEnabled ? 'block' : 'none';
-      configModal.classList.add('hidden');
+      settingsModal.classList.add('hidden');
       updateHUD();
-
-      if (state.isRunning && isMultipleChoiceMode()) {
-        refreshChoiceLock(true);
-      }
-    };
-
-    // Install Guide Modal Controls
-    const installModal = document.getElementById('installModal');
-    const openInstallModalBtn = document.getElementById('openInstallModalBtn');
-    const closeInstallBtn = document.getElementById('closeInstallBtn');
-    const dismissInstallBtn = document.getElementById('dismissInstallBtn');
-
-    if (openInstallModalBtn) openInstallModalBtn.onclick = () => installModal.classList.remove('hidden');
-    if (closeInstallBtn) closeInstallBtn.onclick = () => installModal.classList.add('hidden');
-    if (dismissInstallBtn) dismissInstallBtn.onclick = () => installModal.classList.add('hidden');
-
-    document.getElementById('startEnBtn').onclick = () => startGame('en');
-    document.getElementById('startZhBtn').onclick = () => startGame('zh');
-    document.getElementById('startBopomofoBtn').onclick = () => startGame('bopomofo');
-    document.getElementById('startPinyinToZhBtn').onclick = () => startGame('pinyinToZh');
-    document.getElementById('startZhToPinyinBtn').onclick = () => startGame('zhToPinyin');
-
-    document.getElementById('retryBtn').onclick = () => startGame(config.mode);
-    document.getElementById('returnTitleBtn').onclick = () => {
-      settlementScreen.classList.add('hidden');
-      titleScreen.classList.remove('hidden');
-    };
-
-    // Canvas click focuses input in text modes
-    canvas.addEventListener('click', () => {
-      if (state.isRunning && !isMultipleChoiceMode()) {
-        arcadeTextInput.focus();
+      if (['bopomofo', 'pinyin_to_zh', 'zh_to_pinyin'].includes(config.mode)) {
+        updateChoiceHUD();
       }
     });
 
-    // Run Engine on Load
-    window.onload = function () {
-      resizeCanvas();
-      requestAnimationFrame(gameLoop);
-    };
+    document.getElementById('btnShowInstallHelp').addEventListener('click', () => {
+      installModal.classList.remove('hidden');
+    });
+    document.getElementById('btnCloseInstall').addEventListener('click', () => {
+      installModal.classList.add('hidden');
+    });
   </script>
 </body>
 </html>
